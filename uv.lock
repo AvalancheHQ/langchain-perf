@@ -582,48 +582,17 @@ wheels = [
 ]
 
 [[package]]
-name = "chroma-hnswlib"
-version = "0.7.6"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.13'" },
-    { name = "numpy", version = "2.2.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.13'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/73/09/10d57569e399ce9cbc5eee2134996581c957f63a9addfa6ca657daf006b8/chroma_hnswlib-0.7.6.tar.gz", hash = "sha256:4dce282543039681160259d29fcde6151cc9106c6461e0485f57cdccd83059b7", size = 32256, upload-time = "2024-07-22T20:19:29.259Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a8/74/b9dde05ea8685d2f8c4681b517e61c7887e974f6272bb24ebc8f2105875b/chroma_hnswlib-0.7.6-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:f35192fbbeadc8c0633f0a69c3d3e9f1a4eab3a46b65458bbcbcabdd9e895c36", size = 195821, upload-time = "2024-07-22T20:18:26.163Z" },
-    { url = "https://files.pythonhosted.org/packages/fd/58/101bfa6bc41bc6cc55fbb5103c75462a7bf882e1704256eb4934df85b6a8/chroma_hnswlib-0.7.6-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:6f007b608c96362b8f0c8b6b2ac94f67f83fcbabd857c378ae82007ec92f4d82", size = 183854, upload-time = "2024-07-22T20:18:27.6Z" },
-    { url = "https://files.pythonhosted.org/packages/17/ff/95d49bb5ce134f10d6aa08d5f3bec624eaff945f0b17d8c3fce888b9a54a/chroma_hnswlib-0.7.6-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:456fd88fa0d14e6b385358515aef69fc89b3c2191706fd9aee62087b62aad09c", size = 2358774, upload-time = "2024-07-22T20:18:29.161Z" },
-    { url = "https://files.pythonhosted.org/packages/3a/6d/27826180a54df80dbba8a4f338b022ba21c0c8af96fd08ff8510626dee8f/chroma_hnswlib-0.7.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5dfaae825499c2beaa3b75a12d7ec713b64226df72a5c4097203e3ed532680da", size = 2392739, upload-time = "2024-07-22T20:18:30.938Z" },
-    { url = "https://files.pythonhosted.org/packages/d6/63/ee3e8b7a8f931918755faacf783093b61f32f59042769d9db615999c3de0/chroma_hnswlib-0.7.6-cp310-cp310-win_amd64.whl", hash = "sha256:2487201982241fb1581be26524145092c95902cb09fc2646ccfbc407de3328ec", size = 150955, upload-time = "2024-07-22T20:18:32.268Z" },
-    { url = "https://files.pythonhosted.org/packages/f5/af/d15fdfed2a204c0f9467ad35084fbac894c755820b203e62f5dcba2d41f1/chroma_hnswlib-0.7.6-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:81181d54a2b1e4727369486a631f977ffc53c5533d26e3d366dda243fb0998ca", size = 196911, upload-time = "2024-07-22T20:18:33.46Z" },
-    { url = "https://files.pythonhosted.org/packages/0d/19/aa6f2139f1ff7ad23a690ebf2a511b2594ab359915d7979f76f3213e46c4/chroma_hnswlib-0.7.6-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:4b4ab4e11f1083dd0a11ee4f0e0b183ca9f0f2ed63ededba1935b13ce2b3606f", size = 185000, upload-time = "2024-07-22T20:18:36.16Z" },
-    { url = "https://files.pythonhosted.org/packages/79/b1/1b269c750e985ec7d40b9bbe7d66d0a890e420525187786718e7f6b07913/chroma_hnswlib-0.7.6-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:53db45cd9173d95b4b0bdccb4dbff4c54a42b51420599c32267f3abbeb795170", size = 2377289, upload-time = "2024-07-22T20:18:37.761Z" },
-    { url = "https://files.pythonhosted.org/packages/c7/2d/d5663e134436e5933bc63516a20b5edc08b4c1b1588b9680908a5f1afd04/chroma_hnswlib-0.7.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5c093f07a010b499c00a15bc9376036ee4800d335360570b14f7fe92badcdcf9", size = 2411755, upload-time = "2024-07-22T20:18:39.949Z" },
-    { url = "https://files.pythonhosted.org/packages/3e/79/1bce519cf186112d6d5ce2985392a89528c6e1e9332d680bf752694a4cdf/chroma_hnswlib-0.7.6-cp311-cp311-win_amd64.whl", hash = "sha256:0540b0ac96e47d0aa39e88ea4714358ae05d64bbe6bf33c52f316c664190a6a3", size = 151888, upload-time = "2024-07-22T20:18:45.003Z" },
-    { url = "https://files.pythonhosted.org/packages/93/ac/782b8d72de1c57b64fdf5cb94711540db99a92768d93d973174c62d45eb8/chroma_hnswlib-0.7.6-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:e87e9b616c281bfbe748d01705817c71211613c3b063021f7ed5e47173556cb7", size = 197804, upload-time = "2024-07-22T20:18:46.442Z" },
-    { url = "https://files.pythonhosted.org/packages/32/4e/fd9ce0764228e9a98f6ff46af05e92804090b5557035968c5b4198bc7af9/chroma_hnswlib-0.7.6-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:ec5ca25bc7b66d2ecbf14502b5729cde25f70945d22f2aaf523c2d747ea68912", size = 185421, upload-time = "2024-07-22T20:18:47.72Z" },
-    { url = "https://files.pythonhosted.org/packages/d9/3d/b59a8dedebd82545d873235ef2d06f95be244dfece7ee4a1a6044f080b18/chroma_hnswlib-0.7.6-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:305ae491de9d5f3c51e8bd52d84fdf2545a4a2bc7af49765cda286b7bb30b1d4", size = 2389672, upload-time = "2024-07-22T20:18:49.583Z" },
-    { url = "https://files.pythonhosted.org/packages/74/1e/80a033ea4466338824974a34f418e7b034a7748bf906f56466f5caa434b0/chroma_hnswlib-0.7.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:822ede968d25a2c88823ca078a58f92c9b5c4142e38c7c8b4c48178894a0a3c5", size = 2436986, upload-time = "2024-07-22T20:18:51.872Z" },
-    { url = "https://files.pythonhosted.org/packages/34/3d/71de3ec5207ec3d00b0979242590f59af6db26c3d326712c0e18eee6bd64/chroma_hnswlib-0.7.6-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:93b056ab4e25adab861dfef21e1d2a2756b18be5bc9c292aa252fa12bb44e6ae", size = 195929, upload-time = "2024-07-22T20:19:18.956Z" },
-    { url = "https://files.pythonhosted.org/packages/f8/1e/29dc72ad8b04905ba10e8bb710fe4745b62b16d4afc9dfb6e202270d9a82/chroma_hnswlib-0.7.6-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:fe91f018b30452c16c811fd6c8ede01f84e5a9f3c23e0758775e57f1c3778871", size = 184004, upload-time = "2024-07-22T20:19:20.329Z" },
-    { url = "https://files.pythonhosted.org/packages/ac/d5/8b65f9fbe1c67fe2c90cf1e1760ec7a5010a02021a8f0279a8310a2b46c0/chroma_hnswlib-0.7.6-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:e6c0e627476f0f4d9e153420d36042dd9c6c3671cfd1fe511c0253e38c2a1039", size = 2358814, upload-time = "2024-07-22T20:19:22.035Z" },
-    { url = "https://files.pythonhosted.org/packages/a2/33/53f1916b5e4db193529812bd58179f72ba94ed5eeb4f9be33f1c6e8e8da0/chroma_hnswlib-0.7.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:3e9796a4536b7de6c6d76a792ba03e08f5aaa53e97e052709568e50b4d20c04f", size = 2390920, upload-time = "2024-07-22T20:19:24.002Z" },
-    { url = "https://files.pythonhosted.org/packages/38/6b/fd999f8389e0a5b670a885553e5b6bc01383f1c4e0384373f050f476286d/chroma_hnswlib-0.7.6-cp39-cp39-win_amd64.whl", hash = "sha256:d30e2db08e7ffdcc415bd072883a322de5995eb6ec28a8f8c054103bbd3ec1e0", size = 151104, upload-time = "2024-07-22T20:19:25.743Z" },
-]
-
-[[package]]
 name = "chromadb"
-version = "0.6.3"
+version = "1.0.10"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "bcrypt" },
     { name = "build" },
-    { name = "chroma-hnswlib" },
     { name = "fastapi" },
     { name = "grpcio" },
     { name = "httpx" },
     { name = "importlib-resources" },
+    { name = "jsonschema" },
     { name = "kubernetes" },
     { name = "mmh3" },
     { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.13'" },
@@ -647,9 +616,13 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "uvicorn", extra = ["standard"] },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/39/cd/f0f2de3f466ff514fb6b58271c14f6d22198402bb5b71b8d890231265946/chromadb-0.6.3.tar.gz", hash = "sha256:c8f34c0b704b9108b04491480a36d42e894a960429f87c6516027b5481d59ed3", size = 29297929, upload-time = "2025-01-14T22:20:40.184Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0a/fe/ae7ca5ef7c38b6a3e4e7d249b240d99f40f5266b562e8e9e62266c21196b/chromadb-1.0.10.tar.gz", hash = "sha256:171ba48283e579debed920279f33d340ded80d8986802c2472df40e00a1d68eb", size = 1200803, upload-time = "2025-05-22T00:36:32.025Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/28/8e/5c186c77bf749b6fe0528385e507e463f1667543328d76fd00a49e1a4e6a/chromadb-0.6.3-py3-none-any.whl", hash = "sha256:4851258489a3612b558488d98d09ae0fe0a28d5cad6bd1ba64b96fdc419dc0e5", size = 611129, upload-time = "2025-01-14T22:20:33.784Z" },
+    { url = "https://files.pythonhosted.org/packages/ae/dd/fe223dace71e6d644947798c7ecd64d19624090afcbb334cb70e0e8801f9/chromadb-1.0.10-cp39-abi3-macosx_10_12_x86_64.whl", hash = "sha256:7e962123c27e85e9bf2112f6c60ffdaa0a4666502f205eadc34760284f4ca72f", size = 18300874, upload-time = "2025-05-22T00:36:29.417Z" },
+    { url = "https://files.pythonhosted.org/packages/5e/da/95ae4f4313623aa517bc7b2d97e72d0ef5601d085598b09de66d676af8a9/chromadb-1.0.10-cp39-abi3-macosx_11_0_arm64.whl", hash = "sha256:81381e80a2cb74235816987ca601a8ebba467fae494b37c315efb1cb38c3ca9e", size = 17554400, upload-time = "2025-05-22T00:36:26.384Z" },
+    { url = "https://files.pythonhosted.org/packages/73/d9/59f29c3bd55808b1d9861d36c49d3b4bfffe693382edc1d980d25f5dff38/chromadb-1.0.10-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9cca63ffa9316e3a1672ef8948e243dd3ae858559eda58eaf4826930f3a4faf5", size = 18073433, upload-time = "2025-05-22T00:36:20.422Z" },
+    { url = "https://files.pythonhosted.org/packages/08/b6/75fb165801fcfa374610390528f2a5e5f0a79de8572f3533bff39001ce52/chromadb-1.0.10-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:44f498f734f7396a21bf244b304dbae0f5e6d60d81f2ec4311807e3f13df403e", size = 18981802, upload-time = "2025-05-22T00:36:23.369Z" },
+    { url = "https://files.pythonhosted.org/packages/93/97/7ada7af95dad0d12c6d0f48fda2c9f806b1dc82f0c6d6dbd98a898e21517/chromadb-1.0.10-cp39-abi3-win_amd64.whl", hash = "sha256:a12b0fbded699b00ffb7bb72e6ddce574d8fad381e783dc7cef08fc1fe268b19", size = 18969769, upload-time = "2025-05-22T00:36:34.267Z" },
 ]
 
 [[package]]
@@ -918,16 +891,16 @@ wheels = [
 
 [[package]]
 name = "fastapi"
-version = "0.115.8"
+version = "0.115.9"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pydantic" },
     { name = "starlette" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a2/b2/5a5dc4affdb6661dea100324e19a7721d5dc524b464fe8e366c093fd7d87/fastapi-0.115.8.tar.gz", hash = "sha256:0ce9111231720190473e222cdf0f07f7206ad7e53ea02beb1d2dc36e2f0741e9", size = 295403, upload-time = "2025-01-30T14:06:41.138Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ab/dd/d854f85e70f7341b29e3fda754f2833aec197bd355f805238758e3bcd8ed/fastapi-0.115.9.tar.gz", hash = "sha256:9d7da3b196c5eed049bc769f9475cd55509a112fbe031c0ef2f53768ae68d13f", size = 293774, upload-time = "2025-02-27T16:43:43.149Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/8f/7d/2d6ce181d7a5f51dedb8c06206cbf0ec026a99bf145edd309f9e17c3282f/fastapi-0.115.8-py3-none-any.whl", hash = "sha256:753a96dd7e036b34eeef8babdfcfe3f28ff79648f86551eb36bfc1b0bf4a8cbf", size = 94814, upload-time = "2025-01-30T14:06:38.564Z" },
+    { url = "https://files.pythonhosted.org/packages/32/b6/7517af5234378518f27ad35a7b24af9591bc500b8c1780929c1295999eb6/fastapi-0.115.9-py3-none-any.whl", hash = "sha256:4a439d7923e4de796bcc88b64e9754340fcd1574673cbd865ba8a99fe0d28c56", size = 94919, upload-time = "2025-02-27T16:43:40.537Z" },
 ]
 
 [[package]]
@@ -2348,7 +2321,7 @@ dependencies = [
 
 [[package]]
 name = "langchain-chroma"
-version = "0.2.3"
+version = "0.2.4"
 source = { editable = "libs/partners/chroma" }
 dependencies = [
     { name = "chromadb" },
@@ -2359,7 +2332,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "chromadb", specifier = ">=0.4.0,!=0.5.4,!=0.5.5,!=0.5.7,!=0.5.9,!=0.5.10,!=0.5.11,!=0.5.12,<0.7.0" },
+    { name = "chromadb", specifier = ">=1.0.9" },
     { name = "langchain-core", editable = "libs/core" },
     { name = "numpy", marker = "python_full_version < '3.13'", specifier = ">=1.26.0" },
     { name = "numpy", marker = "python_full_version >= '3.13'", specifier = ">=2.1.0" },
@@ -2419,7 +2392,7 @@ wheels = [
 
 [[package]]
 name = "langchain-core"
-version = "0.3.60"
+version = "0.3.61"
 source = { editable = "libs/core" }
 dependencies = [
     { name = "jsonpatch" },
@@ -2459,7 +2432,7 @@ test = [
     { name = "pytest", specifier = ">=8,<9" },
     { name = "pytest-asyncio", specifier = ">=0.21.1,<1.0.0" },
     { name = "pytest-benchmark" },
-    { name = "pytest-codspeed" },
+    { name = "pytest-codspeed", specifier = "==3.3.0b0" },
     { name = "pytest-mock", specifier = ">=3.10.0,<4.0.0" },
     { name = "pytest-socket", specifier = ">=0.7.0,<1.0.0" },
     { name = "pytest-watcher", specifier = ">=0.3.4,<1.0.0" },
@@ -2716,7 +2689,7 @@ typing = []
 
 [[package]]
 name = "langchain-openai"
-version = "0.3.17"
+version = "0.3.18"
 source = { editable = "libs/partners/openai" }
 dependencies = [
     { name = "langchain-core" },

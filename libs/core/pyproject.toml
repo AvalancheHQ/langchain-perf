@@ -56,7 +56,7 @@ test = [
     "numpy>=2.1.0; python_version>='3.13'",
     "langchain-tests",
     "pytest-benchmark",
-    "pytest-codspeed",
+    "pytest-codspeed==3.3.0b0",
 ]
 test_integration = []
 

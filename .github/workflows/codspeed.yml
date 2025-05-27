@@ -14,8 +14,9 @@ on:
 jobs:
   codspeed:
     name: Run benchmarks
-    if: (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'run-codspeed-benchmarks')) || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
-    runs-on: ubuntu-latest
+    # if: (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'run-codspeed-benchmarks')) || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
+    runs-on: codspeed-macro-staging
+    # runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
@@ -36,9 +37,14 @@ jobs:
 
       - name: Run benchmarks
         uses: CodSpeedHQ/action@v3
+        env:
+          CODSPEED_LOG: debug
+          CODSPEED_USE_PERF: 1
         with:
           token: ${{ secrets.CODSPEED_TOKEN }}
           run: |
             cd libs/core
             uv run --no-sync pytest ./tests/benchmarks --codspeed
           mode: walltime
+          runner-version: 3.6.0-beta.3
+          upload-url: https://api.staging.preview.codspeed.io/upload
